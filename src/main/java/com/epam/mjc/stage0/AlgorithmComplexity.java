@@ -24,7 +24,7 @@ public class AlgorithmComplexity {
     public Complexity badLinerSearch( ) {
 
         int arr1[] = new int [10];
-        int elementSearch = 10;
+        int elementSearch = 5;
         for (int i = 0; i <= arr1.length; i++){
             if (arr1[i] == elementSearch){
                 return badLinerSearch();
@@ -38,7 +38,7 @@ public class AlgorithmComplexity {
      * Return the complexity of accessing an array element by index.
      */
     public Complexity arrayIndexItemAccess() {
-        int[] arr2 =  {  };
+        int[] arr2 =  new int[10];
         System.out.println(arr2[5]);
 
         return arrayIndexItemAccess();
