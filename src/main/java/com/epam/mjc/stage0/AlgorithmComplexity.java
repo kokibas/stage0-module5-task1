@@ -2,7 +2,7 @@ package com.epam.mjc.stage0;
 
 import com.epam.mjc.stage0.utils.Complexity;
 
-import java.util.LinkedList;
+
 
 /**
  * Tasks for assessing the algorithm complexity.
@@ -21,13 +21,13 @@ public class AlgorithmComplexity {
     /**
      * Return the linear search complexity if the element you are looking for is at the end of the array.
      */
-    public Complexity badLinerSearch( ) {
+    public Complexity badLinerSearch() {
 
-        int arr1[] = new int [10];
+        int[] arr1 = new int [10];
         int elementSearch = 5;
         for (int i = 0; i <= arr1.length; i++){
             if (arr1[i] == elementSearch){
-                return badLinerSearch();
+                System.out.println(elementSearch);
             }
 
         }
