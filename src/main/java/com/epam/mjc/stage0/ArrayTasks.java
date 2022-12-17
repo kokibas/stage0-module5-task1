@@ -136,9 +136,9 @@ public class ArrayTasks {
         for (int i = 1; i < arr.length;i++ ){
             for (int j = i; j < arr.length;j++){
                 if(arr[j-1][i] > arr[j][i]){
-                    int temp = arr[j][i];
+                    int t = arr[j][i];
                     arr[j][i] = arr[j-1][i];
-                    arr[j-1][i] = temp;
+                    arr[j-1][i] = t;
                 }
             }
         }
