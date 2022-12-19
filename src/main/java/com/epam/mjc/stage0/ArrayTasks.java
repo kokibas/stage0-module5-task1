@@ -37,11 +37,12 @@ public class ArrayTasks {
      * length = 5  -> [1, 2, 3, 4, 5]
      */
     public int[] generateNumbers(int length) {
+        if (length > 0) {
+            for (int i = 1; i <= length; i++) {
 
-        for (int i = 1; i <= length;i++){
-            int []arr = {i};
 
-            System.out.println(arr);
+                generateNumbers(length);
+            }
         }
     return generateNumbers(length);
     }
