@@ -38,7 +38,7 @@ public class ArrayTasks {
      */
     public int[] generateNumbers(int length) {
         if (length > 0) {
-            for (int i = 1; i <= length; i++) {
+            for (int i = 0; i <= length; i++) {
 
 
                 generateNumbers(length);
@@ -59,9 +59,9 @@ public class ArrayTasks {
         int sum = 0;
         for (int i = 0; i <= arr.length;i++){
             sum += arr[i];
-            System.out.println(sum);
+
         }
-    return totalSum(arr);
+    return sum;
     }
 
     /**
@@ -134,7 +134,7 @@ public class ArrayTasks {
      * arr = [[5, 4], [7]]       -> [[7], [4, 5]]
      */
     public int[][] sortRaggedArray(int[][] arr) {
-        for (int i = 1; i < arr.length;i++ ){
+        for (int i = 0; i < arr.length;i++ ){
             for (int j = i; j < arr.length;j++){
                 if(arr[j-1][i] > arr[j][i]){
                     int t = arr[j][i];
